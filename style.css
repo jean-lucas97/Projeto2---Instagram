@@ -167,6 +167,9 @@ header {
     height: 32px;
     margin: 15px 13px 13px 17px;
 }
+.radius{
+    border-radius: 16px;
+}
 
 .user p {
     font-size: 14px;
@@ -184,6 +187,10 @@ header {
     width: 100%;
 }
 
+.post video{
+    width: 100%;
+}
+
 .icones {
     display: flex;
     justify-content: space-between;
@@ -192,7 +199,11 @@ header {
 
 .icones-esquerda {
     padding: 13px 17px;
-    gap: 13px;
+    
+}
+
+.icones-esquerda ion-icon{
+    margin-right: 15px;
 }
 
 .icones-direita {
@@ -226,6 +237,11 @@ header {
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     margin-bottom: 60px;
+}
+.post-bottom ion-icon{
+    font-size: 22px;
+    
+       
 }
 
 .sidebar {
@@ -320,6 +336,7 @@ margin-top: 6px;
 .seguir-sugestao h4:hover{
     filter: brightness(130%);
     cursor: pointer;
+    transition: 300ms;
 }
 
 .direitos-sidebar h5{
