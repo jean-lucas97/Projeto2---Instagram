@@ -37,6 +37,9 @@ header {
     width: 215px;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
+    
+}
+.topo input::placeholder{
     text-align: center;
 }
 
@@ -131,11 +134,7 @@ header {
     height: 56px;
 }
 
-.side-bar {
-    width: 300px;
-    height: 400px;
-    background-color: green;
-}
+
 
 .botao {
     color: #ffffff;
@@ -229,13 +228,124 @@ header {
     margin-bottom: 60px;
 }
 
+.sidebar {
+    width: 293px;
+    height: 400px;
+    position: sticky;
+    top: 115px;
+    }
+
+.topo-sidebar{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    
+}
+.topo-sidebar img{
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+}
+.sidebar .nome1{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.sidebar .nome1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sidebar .nome2{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8e8e8e;
+}
+.negrito{
+    color: #262626;
+}
+
+.negrito,
+.direitos-sidebar h5:hover {
+    cursor: pointer;
+}
+.cinza {
+    color: #8e8e8e;
+}
+.sugestoes-sidebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 17px;
+}
+.sugestoes-sidebar p{
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+}
+.usuario img{
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+.seguir-sugestao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+.usuario {
+    gap: 11px;
+    display: flex;
+}
+.arroba h3{
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+color: #8e8e8e;
+margin-top: 6px;
+}
+.seguir-sugestao h4{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #139ef2;
+    display: flex;
+    align-items: center;
+
+}
+.seguir-sugestao h4:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+.direitos-sidebar h5{
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+color: #c7c7c7;
+margin-top: 33px;
+}
+
+.direitos-sidebar p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 18px;
+    color: #c7c7c7;
+}
+
+
 @media (max-width: 935px) {
     .topo {
         width: 100%;
         padding: 0px 10px;
     }
 
-    .side-bar {
+    .sidebar {
         display: none;
     }
 
