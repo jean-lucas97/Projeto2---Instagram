@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Roboto',
+        sans-serif;
+    background-color: #fafafa;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+
+    width: 935px;
+    margin: 0 auto;
+
+}
+
+.topo .logo-mobile {
+    display: none;
+}
+
+.topo input {
+    background-color: #fafafa;
+    height: 28px;
+    width: 215px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+.topo-esquerda {
+    display: flex;
+    font-size: 25px;
+    color: #000000;
+}
+
+.separador {
+    background-color: #dbdbdb;
+    width: 1px;
+    height: 22px;
+    margin: 0 10px;
+}
+
+.topo-direita {
+    font-size: 25px;
+    color: #000000;
+}
+
+.topo-direita ion-icon {
+    margin-left: 15px;
+}
+
+.borda-horizontal {
+    height: 1px;
+
+    margin-bottom: 34px;
+    margin-top: 54px;
+}
+
+
+
+.conteudo {
+    background-color: #fafafa;
+    width: 935px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed {
+    width: 614px;
+
+}
+
+.stories {
+    background-color: #ffffff;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding-left: 18px;
+    overflow: hidden;
+    gap: 14px;
+    position: relative;
+    margin-bottom: 24px;
+
+}
+
+.story {
+    height: 86px;
+    width: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.story .perfil {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(arquivos/stories_background.jpg);
+    background-size: cover;
+}
+
+.story span {
+    font-size: 12px;
+}
+
+.perfil img {
+    width: 56px;
+    height: 56px;
+}
+
+.side-bar {
+    width: 300px;
+    height: 400px;
+    background-color: green;
+}
+
+.botao {
+    color: #ffffff;
+    font-size: 32px;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.post-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 61px;
+
+}
+
+.user {
+    display: flex;
+    align-items: center;
+
+}
+
+.user img {
+    width: 32px;
+    height: 32px;
+    margin: 15px 13px 13px 17px;
+}
+
+.user p {
+    font-size: 14px;
+    color: #262626;
+    font-weight: 500;
+    line-height: 16px;
+
+}
+
+.post-top ion-icon {
+    padding-right: 20px;
+}
+
+.post img {
+    width: 100%;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icones-esquerda {
+    padding: 13px 17px;
+    gap: 13px;
+}
+
+.icones-direita {
+    padding: 13px 17px;
+}
+
+.curtidas {
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    padding-bottom: 20px;
+    gap: 5px;
+}
+
+.curtidas img {
+    width: 20px;
+    height: 20px;
+}
+
+.curtidas p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.curtidas strong {
+    font-weight: 700;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 935px) {
+    .topo {
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    .conteudo {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 614px) {
+    .feed {
+        width: 100%;
+    }
+    .topo-direita .sumir, input, .separador {
+        display: none;
+    }
+    .topo-esquerda img{
+        display: none;
+    }
+    .topo .logo-mobile {
+        display: inline;
+    }
+}
