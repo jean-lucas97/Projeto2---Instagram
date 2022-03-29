@@ -121,7 +121,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(arquivos/stories_background.jpg);
+    background-image: url(arquivos/stories_background1.svg);
     background-size: cover;
 }
 
